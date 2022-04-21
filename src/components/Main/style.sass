@@ -62,7 +62,7 @@ button
     font-size: 20px
     color: white
     a
-      color: #5a2448
+      color: white
       text-decoration: underline
       padding-bottom: 1px
     &:last-child
@@ -109,6 +109,7 @@ button
 .main_experience-flex
   display: flex
   align-items: flex-start
+  margin-right: 5px
   font-weight: 400
   font-size: 16px
   line-height: 30px
@@ -271,22 +272,46 @@ button
       margin-right: 63px
 @media only screen and (max-width: 870px)
   .main_header-img
-    img
-      width: 235px
+    display: none
   .main_header-text h1
     font-size: 30px
+  .main_header
+    justify-content: flex-start
+    padding: 75px 32px 32px
   .main_header-p
     width: 186px
     font-size: 18px
+  .main_footer
+    margin-left: 32px
+  .main_header-menu
+    width: 210px
+    img
+      width: 31px
   .main_header-text-flex p
     text-align: left
-  .main_header-text-flex
-    flex-direction: column
-  .main_header-text-flex p:last-child
-    margin-left: 0
-    margin-top: 10px
   .main_experience-flex
     flex-direction: column
   .main_date
     font-weight: 700
     font-size: 17px
+  .main_project-flex
+    width: auto
+  .project_box
+    width: 176px
+    height: 176px
+  .main_experience
+    width: auto
+  .skills_flex
+    flex-direction: column
+    width: auto
+  .main_content
+    flex-direction: column
+  .main_content-left
+    width: auto
+    background: white
+    padding: 32px
+@media only screen and (max-width: 570px)
+  .main_header-text-flex
+    flex-direction: column
+  .main_header-text-flex p:last-child
+    margin-left: 0
